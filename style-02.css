@@ -9,6 +9,9 @@
  .flex-container {
   /* This sets a height on our flex container */
   height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 
   /* 1. Add a display flex property so the items are layed out in a row */
 
@@ -18,16 +21,8 @@
 }
 
 .item:last-child {
-  /* 3. Use the align-self property to move the red box to the bottom (end) */
-
-  /* 4. Check out other align-self properties on the red box to see what happens
-
-    center
-    start
-    stretch
-    end
-
-  */
+  align-self: end;
+  align-self: center;
 }
 
 /*
@@ -116,7 +111,6 @@ main {
   /* Create a nested flex container */
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 /* Styles for the box inside main */
